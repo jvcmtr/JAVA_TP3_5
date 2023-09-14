@@ -1,6 +1,5 @@
-package JAVA_TP3_5;
-
 public class DiaDosNamorados extends CartaoWeb {
+    String NomeDoEvento = "dia dos namorados";
 
     public DiaDosNamorados(String email, String nome) {
         super(email, nome);
@@ -8,12 +7,6 @@ public class DiaDosNamorados extends CartaoWeb {
 
     @Override
     public void showMessage() {
-        String[] a = this.getClass().getName().split("[A-Z]");
-        String ClassName = "";
-            for (String string : a) {
-                ClassName += string.toLowerCase() + " ";
-            }
-
         String mensagem = """
             mensagem para: [email]
             Parabéns, [nome] pelo [evento].
@@ -21,7 +14,7 @@ public class DiaDosNamorados extends CartaoWeb {
                 """;
         mensagem = mensagem.replace("[email]", this.getEmail());
         mensagem = mensagem.replace("[nome]", this.getNome());
-        mensagem = mensagem.replace("[evento]", ClassName);
+        mensagem = mensagem.replace("[evento]", NomeDoEvento);
 
         System.out.println(mensagem);
     }

@@ -1,5 +1,3 @@
-package JAVA_TP3_5;
-
 public class Pascoa extends CartaoWeb {
     private String NomeDoEvento = "almoço de pascoa";
 
