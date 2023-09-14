@@ -8,8 +8,22 @@ public class DiaDosNamorados extends CartaoWeb implements Parabenizavel {
 
     @Override
     public void showMessage() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'showMessage'");
+        String[] a = this.getClass().getName().split("[A-Z]");
+        String ClassName = "";
+            for (String string : a) {
+                ClassName += string.toLowerCase() + " ";
+            }
+
+        String mensagem = """
+            mensagem para: [email]
+            Parabéns, [nome] pelo [evento].
+            ======================================
+                """;
+        mensagem = mensagem.replace("[email]", this.getEmail());
+        mensagem = mensagem.replace("[nome]", this.getNome());
+        mensagem = mensagem.replace("[evento]", ClassName);
+
+        System.out.println(mensagem);
     }
     
 }

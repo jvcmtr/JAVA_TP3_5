@@ -1,13 +1,24 @@
 package JAVA_TP3_5;
 
 public class Aniversario extends CartaoWeb implements Parabenizavel {
+    private String NomeDoEvento = "Aniversario";
+
     public Aniversario(String email, String nome){
         super(email, nome);
     }
 
     @Override
     public void showMessage() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'showMessage'");
+
+        String mensagem = """
+            mensagem para: [email]
+            Parabéns, [nome] pelo [evento].
+            ======================================
+                """;
+        mensagem = mensagem.replace("[email]", this.getEmail());
+        mensagem = mensagem.replace("[nome]", this.getNome());
+        mensagem = mensagem.replace("[evento]", NomeDoEvento)
+
+        System.out.println(mensagem);
     }
 }
