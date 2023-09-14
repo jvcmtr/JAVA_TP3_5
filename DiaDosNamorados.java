@@ -1,6 +1,6 @@
 package JAVA_TP3_5;
 
-public class DiaDosNamorados extends CartaoWeb implements Parabenizavel {
+public class DiaDosNamorados extends CartaoWeb {
 
     public DiaDosNamorados(String email, String nome) {
         super(email, nome);

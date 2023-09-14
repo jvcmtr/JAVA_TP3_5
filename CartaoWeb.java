@@ -1,6 +1,6 @@
 package JAVA_TP3_5;
 
-public abstract class CartaoWeb {
+public abstract class CartaoWeb implements Parabenizavel {
     private String email;
     private String nome;
 

@@ -1,6 +1,6 @@
 package JAVA_TP3_5;
 
-public class Natal extends CartaoWeb  implements Parabenizavel {
+public class Natal extends CartaoWeb  {
     private String NomeDoEvento = "natal";
 
     public Natal(String email, String nome){

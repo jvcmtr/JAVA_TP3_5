@@ -1,6 +1,6 @@
 package JAVA_TP3_5;
 
-public class Pascoa extends CartaoWeb implements Parabenizavel{
+public class Pascoa extends CartaoWeb {
     private String NomeDoEvento = "almoço de pascoa";
 
     public Pascoa(String email, String nome) {
