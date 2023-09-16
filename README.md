@@ -14,7 +14,7 @@ https://github.com/leoinfnet/TP3_JAVA_2023/
   Crie uma classe com o método main e crie 5 cartões com pelo menos 1 de cada tipo e coloque-os em um LinkedList.
   FAÇA UM LAÇO (UTILIZANDO API DO JAVA 8) para percorrer o Array e imprimir a mensagem com o seguinte formato: 
     "
-    mensagem para: [email ]
-    Parabéns, [nome ] pelo [evento ].
+    mensagem para: [email]
+    Parabéns, [nome] pelo [evento].
     ======================================
     "
